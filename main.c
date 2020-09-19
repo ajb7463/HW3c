@@ -3,8 +3,8 @@
 #include <stdlib.h>
 
 int digit_sum(int n){
-  if (n > 1){
-    return digit_sum(n / 10) + n;
+  if (n >= 1){
+    return digit_sum(n / 10) + n%10;
   }
   else{
     return 0;
