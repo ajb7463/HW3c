@@ -4,7 +4,7 @@
 
 int digit_sum(int n){
   if (n > 1){
-    return digit_sum(n / 10) + n%10;
+    return digit_sum(n / 10) + n;
   }
   else{
     return 0;
